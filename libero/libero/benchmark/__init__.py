@@ -119,7 +119,7 @@ class Benchmark(abc.ABC):
 
     def _make_benchmark(self):
         tasks = list(task_maps[self.name].values())
-        print(f"[info] using task orders {task_order_dict[self.name][self.task_order_index]}")
+        # print(f"[info] using task orders {task_order_dict[self.name][self.task_order_index]}")
         self.tasks = [tasks[i] for i in task_order_dict[self.name][self.task_order_index]]
         self.n_tasks = len(self.tasks)
 
